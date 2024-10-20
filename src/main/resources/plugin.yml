@@ -1,6 +1,6 @@
 name: System
 version: '1.0'
-main: de.lukas.system.Main
+main: net.soluslab.system.Main
 api-version: '1.21'
 commands:
   heal:
