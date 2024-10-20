@@ -1,0 +1,88 @@
+name: System
+version: '1.0'
+main: de.lukas.system.Main
+api-version: '1.21'
+commands:
+  heal:
+    description: Healing
+    permission: system.commands.staff.heal
+  healall:
+    description: Heal all Online Players
+    permission: system.commands.staff.heal.healall
+  fly:
+    description: >-
+      Set a Player Flying (Warning, Players may experience a Phenomenon called
+      "Death" wen Falling from a great height)
+    permission: system.commands.staff.fly
+  gamemode:
+    description: Set a Players Gamemode
+    permission: system.commands.staff.gamemode
+    aliases:
+      - gm
+  repair:
+    description: Lets you repair Items
+    permission: system.commands.staff.repair
+  time:
+    description: Set the Time
+    permission: system.commands.staff.time
+  day:
+    description: Set the Time to day
+    permission: system.commands.staff.time.day
+  noon:
+    description: Set the Time to noon
+    permission: system.commands.staff.time.noon
+  night:
+    description: Set the Time to night
+    permission: system.commands.staff.time.night
+  midnight:
+    description: Set the Time to night
+    permission: system.commands.staff.time.midnight
+  message:
+    description: Send a Private Message to a Player
+    permission: system.commands.message
+    aliases:
+      - msg
+      - tellraw
+      - tell
+      - w
+      - whisper
+  freeze:
+    description: Lets you Freeze a Player
+    permission: system.commands.staff.freeze
+  unfreeze:
+    description: Lets you Unfreeze a Player
+    permission: system.commands.staff.freeze.unfreeze
+  rename:
+    description: Lets you Rename the item you are Holding
+    permission: system.commands.staff.rename
+  weather:
+    description: Lets you set the Weather in your Current World
+    permission: system.commands.staff.weather
+  sun:
+    description: Sets the Weather in your Current World to Clear
+    permission: system.commands.staff.weather.sun
+  rain:
+    description: Sets the Weather in your Current World to Rain
+    permission: system.commands.staff.weather.rain
+  thunder:
+    description: Sets the Weather in your Current World to Thunder
+    permission: system.commands.staff.weather.thunder
+  burn:
+    description: Set a player on Fire
+    permission: system.commands.burn
+  clearinventory:
+    description: Clear a players Inventory
+    permission: system.commands.staff.cinv
+    aliases:
+      - cinv
+  clear:
+    description: Clear Command
+    permission: system.commands.staff.clear
+  invsee:
+    description: See into the Inventory of another Player
+    permission: system.commands.staff.invsee
+  enderchest:
+    description: See into the Enderchest of another Player
+    permission: system.commands.enderchest
+    aliases:
+      - ec
