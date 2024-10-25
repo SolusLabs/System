@@ -1,7 +1,5 @@
 package net.soluslab.system.util;
 
-import org.checkerframework.common.aliasing.qual.Unique;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -89,3 +87,72 @@ public class DatabaseManager {
     }
 
 }
+
+/*
+package net.soluslab.system.util;
+
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
+import org.bukkit.plugin.java.JavaPlugin;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class DatabaseManager {
+
+    private HikariDataSource dataSource;
+
+    public DatabaseManager(JavaPlugin plugin) {
+        loadDatabaseConfig(plugin);
+    }
+
+    private void loadDatabaseConfig(JavaPlugin plugin) {
+        File file = new File(plugin.getDataFolder(), "system.sql");
+
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            String jdbcUrl = br.readLine().trim();
+            String username = br.readLine().trim();
+            String password = br.readLine().trim();
+
+            HikariConfig config = new HikariConfig();
+            config.setJdbcUrl(jdbcUrl);
+            config.setUsername(username);
+            config.setPassword(password);
+            config.setMaximumPoolSize(10); // Set the maximum pool size
+            config.setConnectionTimeout(30000); // Set connection timeout
+            config.setIdleTimeout(600000); // Set idle timeout
+            config.setMaxLifetime(1800000); // Set max lifetime of a connection
+
+            this.dataSource = new HikariDataSource(config);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void executeQuery(String query) {
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
+
+            // Execute your query here
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                // Process the result set
+                System.out.println("Column 1: " + resultSet.getString(1));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void close() {
+        if (dataSource != null) {
+            dataSource.close();
+        }
+    }
+}
+ */

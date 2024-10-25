@@ -1,5 +1,5 @@
 name: System
-version: '1.0'
+version: 'v1.0.0'
 main: net.soluslab.system.Main
 api-version: '1.21'
 commands:
@@ -9,6 +9,9 @@ commands:
   healall:
     description: Heal all Online Players
     permission: system.commands.staff.heal.healall
+  feed:
+    description: Feed a Player
+    permission: system.commands.staff.heal.feed
   fly:
     description: >-
       Set a Player Flying (Warning, Players may experience a Phenomenon called
@@ -70,11 +73,17 @@ commands:
   burn:
     description: Set a player on Fire
     permission: system.commands.burn
+  clearchat:
+    description: Clear The Chat
+    permission: system.commands.staff.clearchat
+    aliases:
+      - cc
   clearinventory:
     description: Clear a players Inventory
     permission: system.commands.staff.cinv
     aliases:
       - cinv
+      - clean
   clear:
     description: Clear Command
     permission: system.commands.staff.clear
@@ -86,3 +95,46 @@ commands:
     permission: system.commands.enderchest
     aliases:
       - ec
+  broadcast:
+    description: Send a Server wide Broadcast Message
+    permission: system.commands.staff.broadcast
+  wbroadcast:
+    description: Send a World wide Broadcast Message
+    permission: system.commands.staff.wbroadcast
+  getpos:
+    description: Get the Current position of a Player
+    permission: system.commands.staff.getpos
+    aliases:
+      - coords
+  workbench:
+    description: Open a Workbench
+    permission: system.commands.workbench
+  anvil:
+    description: Open an Anvil
+    permission: system.commands.anvil
+  kick:
+    description: Kick a Player
+    permission: system.commands.staff.kick
+  kickall:
+    description: Kick all Players
+    permission: system.commands.staff.kick.all
+  ban:
+    description: Ban a Player
+    permission: system.commands.staff.ban
+  unban:
+    description: Unban Banned Players
+    permission: system.commands.staff.unban
+    aliases:
+      - pardon
+  fakejoin:
+    description: Send a Fake Join Message into the Chat
+    permission: system.commands.staff.fakejoin
+  fakequit:
+    description: Send a Fake Quit Message into the Chat
+    permission: system.commands.staff.fakequit
+  plugin:
+    description: Get The Current Server plugins
+    permission: system.commands.staff.plugin
+    alias:
+      - plugins
+      - pl

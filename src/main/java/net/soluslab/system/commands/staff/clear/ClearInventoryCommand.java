@@ -1,4 +1,4 @@
-package net.soluslab.system.commands.staff;
+package net.soluslab.system.commands.staff.clear;
 
 import net.soluslab.system.Main;
 import org.bukkit.Bukkit;

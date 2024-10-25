@@ -55,8 +55,8 @@ public class FreezeCommand implements TabExecutor {
                 databaseManager.addFreezedPlayer(t.getUniqueId());
                 if (!(s.getName().equals(t.getName()))) {
                     t.sendMessage(Main.get_prefix() + "You have been §afreezed");
-                    t.sendActionBar(Component.text("§7[§cSystem§7] - §1Freezed§7 - [§cSystem§7]"));
-                    s.sendMessage(Main.get_prefix() + "You have §afreezed§7 §a" + t.getName());
+                    t.sendActionBar(Component.text("§7[§cSystem§7] - Freezed - [§cSystem§7]"));
+                    s.sendMessage(Main.get_prefix() + "You have freezed §a" + t.getName());
                 } else {
                     s.sendMessage(Main.get_prefix() + "You have §afreezed§7 yourself");
                 }

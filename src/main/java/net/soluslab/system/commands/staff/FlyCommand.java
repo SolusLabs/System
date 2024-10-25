@@ -40,11 +40,13 @@ public class FlyCommand implements TabExecutor {
                     return false;
                 }
                 if (t.isFlying()) {
+                    t.setAllowFlight(false);
                     t.setFlying(false);
                     t.sendMessage(Main.get_prefix() + "Returning to the Ground!");
                     s.sendMessage(Main.get_prefix() + "§a " + t.getName() + " has been bolted to the ground!");
                     return true;
                 } else {
+                    t.setAllowFlight(true);
                     t.setFlying(true);
                     t.sendMessage(Main.get_prefix() + "You can fly now! Thank §a" + s.getName());
                     s.sendMessage(Main.get_prefix() + "You successfully set " + t.getName() + "flying!");

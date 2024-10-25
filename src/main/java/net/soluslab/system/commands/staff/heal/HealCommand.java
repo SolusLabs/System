@@ -24,7 +24,7 @@ public class HealCommand implements TabExecutor {
             Player p = (Player) s;
             p.setHealth(p.getMaxHealth());
             p.setFoodLevel(20);
-            p.sendMessage(Main.get_prefix() + "You are now healthy!");
+            p.sendMessage(Main.get_prefix() + "You are now §ahealthy§7!");
             return true;
         } else if (args.length == 1) {
             Player t = Bukkit.getPlayer(args[0]);

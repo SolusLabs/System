@@ -1,0 +1,184 @@
+#Plugin by Luxx & DippyCoder
+
+#############################
+#           MAIN            #
+#         SETTINGS          #
+#############################
+prefix: "§c§lSystem §8§l» §r§7"
+no-permission: ""
+disabled-command: ""
+not-a-player: ""
+
+#############################
+#         COMMAND           #
+#         SETTINGS          #
+#############################
+# HEALING
+
+heal:
+  permission: ""
+  enabled: true
+
+healall:
+  permission: ""
+  enabled: true
+
+feed:
+  permission: ""
+  enabled: true
+
+# PLAYER MANAGEMENT
+kick:
+  permission: ""
+  enabled: true
+
+kickall:
+  permission: ""
+  enabled: true
+
+ban:
+  permission: ""
+  enabled: true
+
+unban:
+  permission: ""
+  enabled: true
+
+fly:
+  permission: ""
+  enabled: true
+
+gamemode:
+  permission: ""
+  enabled: true
+
+#BROADCAST / CHAT & INVENTORY
+invsee:
+  permission: ""
+  enabled: true
+
+clearinventory:
+  permission: ""
+  enabled: true
+
+clearchat:
+  permission: ""
+  enabled: true
+
+clear:
+  permission: ""
+  enabled: true
+
+broadcast:
+  permission: ""
+  enabled: true
+
+wbroadcast:
+  permission: ""
+  enabled: true
+
+freeze:
+  permission: ""
+  enabled: true
+
+unfreeze:
+  permission: ""
+  enabled: true
+
+#TIME / WEATHER CONTROL
+time:
+  permission: ""
+  enabled: true
+
+noon:
+  permission: ""
+  enabled: true
+
+day:
+  permission: ""
+  enabled: true
+
+night:
+  permission: ""
+  enabled: true
+
+midnight:
+  permission: ""
+  enabled: true
+
+weather:
+  permission: ""
+  enabled: true
+
+sun:
+  permission: ""
+  enabled: true
+
+rain:
+  permission: ""
+  enabled: true
+
+thunder:
+  permission: ""
+  enabled: true
+
+#TROLLING
+burn:
+  permission: ""
+  enabled: true
+
+fake-join:
+  enabled: true
+
+fake-quit:
+  enabled: true
+
+#PLAYER COMMANDS
+workbench:
+  permission: ""
+  enabled: true
+
+anvil:
+  permission: ""
+  enabled: true
+
+repair:
+  permission: ""
+  enabled: true
+
+rename:
+  permission: ""
+  enabled: true
+
+message:
+  permission: ""
+  enabled: true
+
+enderchest:
+  permission: ""
+  enabled: true
+
+getpos:
+  permission: ""
+  enabled: true
+
+#############################
+#        WELCOMEMSG         #
+#         SETTINGS          #
+#############################
+#ORIGINAL PLUGIN: https://github.com/DippyCoder/WelcomeMSG
+
+#It looks like this: prefix + text-start + Player + text-end, let sth blank if you don't want to use sth!
+#When the player joins
+player-join:
+  text-start: "§eWelcome §a"
+  text-end: " §eto our server!"
+  enabled: true
+#When the player leaves
+player-quit:
+  text-start: "§eThe player §a"
+  text-end: " §ehas left our server!"
+  enabled: true
+
+
+#WMSG-Commands are now at line 128 & 131!
